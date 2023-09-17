@@ -1,0 +1,111 @@
+*{
+    margin: auto;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #f8f8f8;
+}
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+nav h2{
+    display: block;
+    color: #0c0c0c;
+    padding: 0;
+    margin: 0;
+}
+.Indice{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.link a{
+    position: relative;
+    padding: 0.45rem;
+    color: #000000;
+}
+.link a::after{
+    content:"";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #6aeb20;
+    transition: all 0,03s ease;
+}
+.link a:hover::after{
+    width: 70%;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;   
+}
+.luz{
+    position: absolute;
+    box-shadow: 100px 0 1000px 100px #2dd81d;
+    z-index: -100;
+}
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+header .contenido{
+    margin-bottom: 10rem;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 300;
+}
+header .contenido h1{
+    color: #050505;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+header .contenido h2 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #020202;
+}
+section .contenido i{
+    margin-bottom: 2rem;
+    color: #080707;
+    font-weight: 300;
+}
+section .contenido h4{
+    border: 1px solid #080808;
+    background-color: #a0f170;
+    box-shadow: 0px 0px 10px 2px#6aeb20;
+    border-radius: 50px 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: #000000;
+    margin: 2rem;
+}
+section .contenido b{
+    font-weight: 600;
+    color: #49d81d;
+}
+.text{
+    margin: 0.5rem;
+}
